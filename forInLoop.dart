@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main() {
   List users = [
     {
@@ -203,11 +201,11 @@ void main() {
       }
     }
   ];
-  for (int i = 0; i < users.length; i++) {
-    print(users[i]['name']);
-    print(users[i]['address']['city']);
-    print(users[i]['address']['geo']['lat']);
-    print(users[i]['address']['geo']['lng']);
-    print('    ');
+  for (var a in users) {
+    print('name: ${a['name']}');
+    print('city: ${a['address']['city']}');
+    print('geo-Lat: ${a['address']['geo']['lat']}');
+    print('geo-lng: ${a['address']['geo']['lng']}');
+    print('   ');
   }
 }
